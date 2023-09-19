@@ -30,6 +30,17 @@ public class Method {
          * When sum_end equals to 0, program stops and return the result
          */
 
+        // Halting condition example:
+        int halt_start = 5, halt_end = 10;
+        int halt_res = halting_sum_example(halt_start, halt_end);
+        System.out.println("This is the halting condition example's result: " + halt_res);
+        /*
+         * 10 + halting_sum_example(5, 10-1)
+         * 10 + 9 + halting_sum_example(5, 9-1)
+         * ...
+         * 10 + 9 + 8 + 7 + 6
+         */
+
     }
 
     public static void parameter_example(String fname) {
@@ -88,6 +99,15 @@ public class Method {
             return (add_int + recursion_sum_example(add_int - 1));
         } else {
             return 0;
+        }
+    }
+
+    // Halting condition is when the function stops calling itself
+    public static int halting_sum_example(int start, int end) {
+        if (end > start) {
+            return end + halting_sum_example(start, end - 1);
+        } else { // when end <= start ==> halting condition
+            return end;
         }
     }
 }
