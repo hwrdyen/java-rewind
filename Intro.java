@@ -3,30 +3,30 @@ public class Intro {
         System.out.println("Intro Class");
 
         // variable type example:
-        // variable_type();
+        variable_type();
 
         // String method example:
-        // string_methods();
+        string_methods();
 
         // Math method example:
-        // math_methods();
+        math_methods();
 
         // Short-hand if...else example:
-        // ifelse_shorthand();
+        ifelse_shorthand();
 
         // use switch method without break statement:
-        // switch_nobreak_example();
+        switch_nobreak_example();
         // use switch method with break statement:
-        // switch_withbreak_example();
+        switch_withbreak_example();
 
         // while and do...while loop example:
-        // whileloop_methods();
+        whileloop_methods();
 
         // for each loop example:
-        // foreachloop_method();
+        foreachloop_method();
 
         // break and continue example:
-        // break_continue_method();
+        break_continue_method();
 
         // array example:
         array_example();
